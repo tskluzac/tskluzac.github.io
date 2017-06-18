@@ -6,8 +6,8 @@ app = Flask(__name__)
 Bootstrap(app)
 
 @app.route('/')
-def hello_world():
-    print("dasboard")
+def dashboard():
+    print("dashboard")
     return render_template('dashboard.html')
 
 @app.route('/discrete')
