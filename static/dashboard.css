@@ -58,12 +58,14 @@ body {
 .nav-sidebar > li > a {
   padding-right: 20px;
   padding-left: 20px;
+
 }
 .nav-sidebar > .active > a,
 .nav-sidebar > .active > a:hover,
 .nav-sidebar > .active > a:focus {
-  color: #fff;
-  background-color: #428bca;
+  color: orange;
+  background-image:none;
+  background-color: navy;
 }
 
 
@@ -103,7 +105,14 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
-.redText {
-  color: red;
-  font-weight: bold;
+
+.navbar-custom {
+
 }
+
+.navbar-default {              // replace "default" with inverse if using inverse
+    background-image: none;         // This eliminates the issue of color not changing
+    background-color: violet  ;
+    background-repeat: no-repeat;
+}
+
