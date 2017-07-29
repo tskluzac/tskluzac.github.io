@@ -10,15 +10,15 @@ def dashboard():
     print("dashboard")
     return render_template('dashboard.html')
 
-@app.route('/discrete')
-def discrete():
-    print("discrete")
-    return render_template('discrete.html')
+@app.route('/research')
+def research():
+    print("research")
+    return render_template('research.html')
 
-@app.route("/algorithms")
-def algorithms():
-    print("algorithms")
-    return render_template('algorithms.html')
+@app.route("/blog")
+def blog():
+    print("blog")
+    return render_template('blog.html')
 
 if __name__ == '__main__':
     app.run()
