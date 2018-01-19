@@ -7,12 +7,12 @@ Tyler J. Skluzacek
 {% block styles %}
 {{super()}}
 <link rel="stylesheet" href="{{url_for('.static', filename='dashboard.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 {% endblock %}
 
 {% block content %}
-{#    <nav class="navbar navbar-inverse navbar-fixed-top">#}
     <nav class="navbar navbar-default navbar-fixed-top">
 
       <div class="container-fluid">
@@ -28,16 +28,18 @@ Tyler J. Skluzacek
           <a class="navbar-brand" href="{{ url_for('dashboard') }}">Tyler J. Skluzacek</a>
 
 
+
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
+              <li><div style="padding-top:10px;">
+                  <a target = "_blank" href="http://facebook.com/tjskoolz" class="fa fa-facebook-square fa-2x fa-pull-left"></a>
+                  <a target = "_blank" href="http://twitter.com/tjskluz" class="fa fa-twitter-square fa-2x fa-pull-left"></a>
+              <a target = "_blank" href="http://github.com/tskluzac" class="fa fa-github-square fa-2x fa-pull-left"></a>
+              <a target = "_blank" href="http://linkedin.com/in/tskluzacek" class="fa fa-linkedin-square fa-2x fa-pull-left"></a></div></li>
             <li><a href="{{ url_for('dashboard') }}">Home</a></li>
-{#            <li><a href="#">Hi. </a></li>#}
-{#            <li><a href="#">Log Out</a></li>#}
+
           </ul>
-{#          <form class="navbar-form navbar-right">#}
-{#            <input type="text" class="form-control" placeholder="Search...">#}
-{#          </form>#}
         </div>
       </div>
     </nav>
@@ -48,21 +50,8 @@ Tyler J. Skluzacek
           <ul class="nav nav-sidebar">
             <li><a href="{{ url_for('blog') }}">Blog <span class="sr-only">(current)</span></a></li>
             <li><a href="{{  url_for('research') }}">Research Endeavors</a></li>
-{#            <li><a href="{{ url_for('view_data') }}">Analytics</a></li>#}
-{#            <li><a href="#">Export</a></li>#}
           </ul>
-{#          <ul class="nav nav-sidebar">#}
-{#            <li><a href="">Nav item</a></li>#}
-{#            <li><a href="">Nav item again</a></li>#}
-{#            <li><a href="">One more nav</a></li>#}
-{#            <li><a href="">Another nav item</a></li>#}
-{#            <li><a href="">More navigation</a></li>#}
-{#          </ul>#}
-{#          <ul class="nav nav-sidebar">#}
-{#            <li><a href="">Nav item again</a></li>#}
-{#            <li><a href="">One more nav</a></li>#}
-{#            <li><a href="">Another nav item</a></li>#}
-{#          </ul>#}
+
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                         <h1> Welcome to the personal page of Tyler J. Skluzacek. </h1>
@@ -70,11 +59,11 @@ Tyler J. Skluzacek
             <div class="paragraphs">
   <div class="row">
     <div class="span4">
-{#      <div class="content-heading"><h3>Experience &nbsp </h3></div>#}
       <img style="float:right" src="http://tech.mn/wp-content/uploads/2015/12/Nels-Tyler-Alex-Tech.MN-12-11-2015-Kevin-C.-Walker-12.jpg" width = "20%" />
 
       <p> My name is Tyler J. Skluzacek, and I'm a Ph.D. student in Computer Science at the University of Chicago and I'm a member of Globus Labs and RDCEP. My
             research spans large scale systems, distributed search, databases, data cleaning, and data integration. </p>
+
 
     </div>
   </div>
@@ -85,54 +74,25 @@ Tyler J. Skluzacek
             <div class="paragraphs">
   <div class="row">
     <div class="span4">
-{#      <div class="content-heading"><h3>Experience &nbsp </h3></div>#}
-
 
         <h3>2017</h3>
         <ul>
-            <li>Beckman, Paul, Tyler J. Skluzacek, Kyle Chard, and Ian Foster. <a target="_blank" href = "https://www.researchgate.net/publication/317352352_Skluma_A_Statistical_Learning_Pipeline_for_Taming_Unkempt_Data_Repositories"> "Skluma: A Statistical Learning Pipeline for Taming Unkempt Data Repositories."</a> In Proceedings of the 29th International Conference on Scientific and Statistical Database Management, p. 41. ACM, 2017.</li>
+            <li><strong>T. Skluzacek</strong>, S. Rehman, I. Foster. "Safe Double Blind Studies as a Service". In Workshop on Safe Data Platforms and Paradigms, 2017. </li>
+            <li>P. Beckman, <strong>T. Skluzacek</strong>, K. Chard, and I. Foster. <a target="_blank" href = "https://www.researchgate.net/publication/317352352_Skluma_A_Statistical_Learning_Pipeline_for_Taming_Unkempt_Data_Repositories"> "Skluma: A Statistical Learning Pipeline for Taming Unkempt Data Repositories."</a> In Proceedings of the 29th International Conference on Scientific and Statistical Database Management, p. 41. ACM, 2017.</li>
         </ul>
 
         <h3>2016</h3>
         <ul>
-            <li>Skluzacek, Tyler J., Kyle Chard, and Ian Foster. <a target = "_blank" href = "https://www.researchgate.net/publication/313451611_Klimatic_A_Virtual_Data_Lake_for_Harvesting_and_Distribution_of_Geospatial_Data">"Klimatic: a virtual data lake for harvesting and distribution of geospatial data."</a> In Parallel Data Storage and data Intensive Scalable Computing Systems (PDSW-DISCS), 2016 1st Joint International Workshop on, pp. 31-36. IEEE, 2016.</li>
+            <li> <strong> T. Skluzacek </strong>, K. Chard, and I. Foster. <a target = "_blank" href = "https://www.researchgate.net/publication/313451611_Klimatic_A_Virtual_Data_Lake_for_Harvesting_and_Distribution_of_Geospatial_Data">"Klimatic: a virtual data lake for harvesting and distribution of geospatial data."</a> In Parallel Data Storage and data Intensive Scalable Computing Systems (PDSW-DISCS), 2016 1st Joint International Workshop on, pp. 31-36. IEEE, 2016.</li>
         </ul>
 
     </div>
   </div>
 </div>
 
-            <a class="twitter-timeline" href="https://twitter.com/tjskluz">Tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-{#        <img src="http://tech.mn/wp-content/uploads/2015/12/Nels-Tyler-Alex-Tech.MN-12-11-2015-Kevin-C.-Walker-12.jpg" width = "20%" class="pull-right">#}
+        <a class="twitter-timeline" style="float:right" data-lang="en" data-width="300" data-height="400" data-theme="light" href="https://twitter.com/tjskluz?ref_src=twsrc%5Etfw">Tweets by tjskluz</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
-
-
-
-            <!-- UNCOMMENT BELOW FOR CIRCLES WITH LABELS.
-          <div class="row placeholders">
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-            <div class="col-xs-6 col-sm-3 placeholder">
-              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail">
-              <h4>Label</h4>
-              <span class="text-muted">Something else</span>
-            </div>
-          </div>
-          -->
         </div>
       </div>
     </div>
