@@ -67,23 +67,25 @@ Tyler J. Skluzacek
                         <h1> The personal page of Tyler J. Skluzacek. </h1>
 
             <script>
+    // get a new date (locale machine date time)
+    var date = new Date();
+    // get the date as a string
+    var n = date.toDateString();
+    // get the time as a string
+    var time = date.toLocaleTimeString();
 
-var d = new Date(),
-    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-    ampm = d.getHours() >= 12 ? 'pm' : 'am',
-    months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
-    days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-    console.log(days[d.getDay()]+' '+months[d.getMonth()]+' '+d.getDate()+' '+d.getFullYear()+' '+hours+':'+minutes+ampm);
-
-</script>
+    // log the date in the browser console
+    console.log('date:', n);
+    // log the time in the browser console
+    console.log('time:',time);
+    </script>
 
             <div class="paragraphs">
   <div class="row">
     <div class="span4">
       <img style="float:right" src="http://tech.mn/wp-content/uploads/2015/12/Nels-Tyler-Alex-Tech.MN-12-11-2015-Kevin-C.-Walker-12.jpg" width = "20%" />
 
-      <p> My name is Tyler J. Skluzacek, and I'm a Ph.D. student in Computer Science at the University of Chicago where I'm a member of Globus Labs and RDCEP. My
+      <p> My name is Tyler J. Sakluzacek, and I'm a Ph.D. student in Computer Science at the University of Chicago where I'm a member of Globus Labs and RDCEP. My
           research strives to produce generalized methods for indexing petascale heterogeneous, scientific repositories. This work lies at the nexus
           of cloud computing, machine learning, file forensics, and search. </p>
 
