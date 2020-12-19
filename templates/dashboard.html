@@ -1,10 +1,17 @@
 {% extends "bootstrap/base.html" %}
 
-
 {% block title %}
 Tyler J. Skluzacek
 
 {% endblock %}
+
+<head> <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5T6G8XV');</script>
+<!-- End Google Tag Manager --> </head>
 
 {% block styles %}
 {{super()}}
@@ -15,6 +22,14 @@ Tyler J. Skluzacek
 {% endblock %}
 
 {% block content %}
+    <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5T6G8XV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    </body>
+
+
     <nav class="navbar navbar-default navbar-fixed-top">
 
       <div class="container-fluid">
@@ -26,10 +41,7 @@ Tyler J. Skluzacek
             <span class="icon-bar"></span>
           </button>
 
-
           <a class="navbar-brand" href="{{ url_for('dashboard') }}">Tyler J. Skluzacek</a>
-
-
 
         </div>
         <div id="navbar" class="navbar-collapse collapse">
@@ -47,6 +59,7 @@ Tyler J. Skluzacek
     </nav>
 
     <div class="container-fluid">
+    <!--
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <p></p>
@@ -56,7 +69,7 @@ Tyler J. Skluzacek
 {#            <li><a href="{{  url_for('research') }}">Research Endeavors</a></li>#}
           </ul>
 
-        </div>
+        </div>-->
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
                         <h1> The personal page of Tyler J. Skluzacek. </h1>
 
@@ -67,7 +80,7 @@ Tyler J. Skluzacek
     <div class="span4">
       <img style="float:right" src="http://tech.mn/wp-content/uploads/2015/12/Nels-Tyler-Alex-Tech.MN-12-11-2015-Kevin-C.-Walker-12.jpg" width = "20%" />
 
-      <p> Hello! I'm Tyler J. Skluzacek. Mitch shared my page and I'll cry myself to sleep tonight. . </p>
+      <p> Hello! I'm Tyler J. Skluzacek.  </p>
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/gfkts0u-m6w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
