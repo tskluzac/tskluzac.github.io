@@ -2,23 +2,23 @@ from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
 
 
-app = Flask(__name__)
-Bootstrap(app)
+application = Flask(__name__)
+Bootstrap(application)
 
 
-@app.route('/')
+@application.route('/')
 def dashboard():
     print("dashboard")
     return render_template('dashboard.html')
 
 
-@app.route('/research')
+@application.route('/research')
 def research():
     print("research")
     return render_template('research.html')
 
 
-@app.route("/blog")
+@application.route("/blog")
 def blog():
     print("blog")
     return render_template('blog.html')
