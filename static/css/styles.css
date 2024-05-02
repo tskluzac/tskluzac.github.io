@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+img {
+    margin: 0 auto;
+    display: block;
+}
+
+.intro-text {
+    text-align: justify;
+    text-align-last: left; /* or 'center', depending on your preference */
+}
+
+.social-icons {
+    margin: 10px 0;
+    /* Adjust size and spacing of icons */
+}
+
+.social-icons img {
+    width: 30px; /* or your preferred size */
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-and-cv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.cv-download {*/
+/*    margin-left: 20px; !* Adjust spacing as needed *!*/
+/*}*/
+
+#news .col-custom {
+    flex: 0 0 20%; /* Each column takes up 20% of the row */
+    max-width: 20%;
+}
+
+#news img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+    #news .col-custom {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    #news .col-custom {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tyler J. Skluzacek, Ph.D.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/styles.css">
+</head>
+<body>
+
+<div class="container py-5">
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="text-center mb-5">
+        <img src="../static/images/abcde.jpeg" alt="Dr. Tyler Skluzacek" class="img-fluid rounded-circle" style="max-width: 200px;">
+        <h1>Tyler J. Skluzacek, Ph.D.</h1>
+
+            <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="https://scholar.google.com/citations?user=S2g6hQYAAAAJ&hl=en&oi=ao" target="https://scholar.google.com/citations?user=S2g6hQYAAAAJ&hl=en&oi=ao"><img src="../static/images/scholar-logo.png" alt="Google Scholar"></a>
+        <a href="https://www.linkedin.com/in/tskluzacek/" target="https://www.linkedin.com/in/tskluzacek/"><img src="../static/images/linkedin_icon.png" alt="LinkedIn"></a>
+        <a href="https://twitter.com/tjskluz" target="https://twitter.com/tjskluz"><img src="../static/images/x-logo.avif" alt="Twitter"></a>
+    </div>
+
+        <br>
+
+
+        <br>
+
+        <p class="intro-text">I am a research scientist in the <a href="https://www.ornl.gov/group/workflows-and-ecosystem-services">Workflow and Ecosystem Services (WES) group</a> at the National Center for Computational Sciences (NCCS)
+        at Oak Ridge National Lab. Additionally, I am an Adjunct Professor in the Computing and Data Analytics Department at
+        Trinity Christian College in Palos Heights, IL. I am also the original founder of the NightWare (previously myBivy) application for monitoring and
+            treating nightmares in patients with PTSD.
+        </p>
+
+        <p class="intro-text">
+            My work crosses the thresholds of data science and distributed computing, with a primary focus on designing
+            distributed workflow orchestration systems capable of handling expansive compute requirements and data volumes. I build these systems
+            so that the lab can perform autonomous experimentation.
+            My data science expertise spans statistical and deep learning approaches for search-driven data mining and time series analytics.
+
+        </p>
+    <p class="intro-text">
+            I stay actively involved in the computing community. I am currently serving as the publicity
+            chair for eScience '24, and have previously served on program committees for SC, HPDC, IPDPS, ICPP, and SciPy.
+            I served on the curriculum development team for the Data4All bridge workshop for South-Chicago high school
+            students.
+
+
+
+        </p>
+                <!-- CV Download Link -->
+        <div class="cv-download">
+            <a href="{{ url_for('static', filename='cv/tyler_skluzacek_cv.pdf') }}" download="tyler_skluzacek_cv.pdf" class="btn btn-primary">Download CV</a>
+        </div>
+
+    </section>
+
+    <br>
+<!-- Recent News Section -->
+<section id="news">
+
+<div class="container mt-4">
+    <!-- Recent News Section -->
+        <h2 class="mb-4">Recent News</h2>
+        <div class="row">
+            <!-- News Item 1 -->
+            <!-- Repeat for News Items 2-4 -->
+            <!-- News Item 2 -->
+            <div class="col-md-3">
+                <img src="../static/images/escience24-square.png" alt="Adjunct Professor" class="img-fluid">
+                <h3>Publicity Chair of eScience 2024</h3>
+                <p>(Apr. 2024) I am excited to be serving as the Publicity Chair for eScience 2024. <a href="https://www.escience-conference.org/2024/call-for-papers"> Please consider submitting a paper! </a></p>
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/trinity-logo.webp" alt="Adjunct Professor" class="img-fluid">
+                <h3>Teaching at Trinity</h3>
+                <p>(Jan. 2024) I am teaching "Machine learning for data mining and advanced analytics" for the Computing and Data Analytics Department at Trinity Christian College. </p>
+            </div>
+            <div class="col-md-3">
+                <img src="../static/images/ornl-logo.png" alt="LDRD funding award" class="img-fluid">
+                <h3>LDRD Funding Award</h3>
+                <p>(Nov. 2023) I am co-PI on $300k grant to study distributed multi-workflow orchestration. Awarded by Oak Ridge National Lab.</p>
+            </div>
+                        <div class="col-md-3">
+                <img src="../static/images/tyler-escience.jpeg" alt="News Title 3" class="img-fluid">
+                <h3>eScience 2023</h3>
+                <p>(Oct. 2023) I traveled to Limassol, Cyprus to present our paper: "Can Automated Metadata Extraction Make Scientific Data More Navigable?"</p>
+            </div>
+
+{#                        <div class="col-md-3">#}
+{#                <img src="../static/images/nsf.jpeg" alt="News Title 4" class="img-fluid">#}
+{#                <h3>ParslFest 2023</h3>#}
+{#                <p>Short summary of the news item.</p>#}
+{#            </div>#}
+        </div>
+
+            <!-- Repeat for News Items 2-4 -->
+
+
+            <!-- Additional News Items... -->
+        </div>
+    <br>
+    <!-- Older News Items -->
+    <div class="older-news">
+        <h3>Older News</h3>
+        <ul>
+            <li>[Oct. 2023] Tyler presented at ParslFest 2023.</li>
+{#            <li><a href="#">Older News Item 2</a></li>#}
+            <!-- More older news items here -->
+        </ul>
+    </div>
+</section>
+
+
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
