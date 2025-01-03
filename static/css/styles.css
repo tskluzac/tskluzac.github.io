@@ -1,7 +1,9 @@
+/* General body styles */
 body {
     font-family: Arial, sans-serif;
 }
 
+/* Modal styles */
 .modal {
     display: none;
     position: fixed;
@@ -11,7 +13,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
@@ -35,37 +37,44 @@ body {
     cursor: pointer;
 }
 
+/* Image styles */
 img {
     margin: 0 auto;
     display: block;
 }
 
+/* Introduction text */
 .intro-text {
     text-align: justify;
-    text-align-last: left; /* or 'center', depending on your preference */
+    text-align-last: left;
 }
 
+/* Social media icons */
 .social-icons {
     margin: 10px 0;
-    /* Adjust size and spacing of icons */
 }
 
 .social-icons img {
-    width: 30px; /* or your preferred size */
+    width: 30px;
     margin: 0 10px;
     display: inline-block;
 }
 
+/* Social icons and CV section */
 .social-and-cv {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/*.cv-download {*/
-/*    margin-left: 20px; !* Adjust spacing as needed *!*/
-/*}*/
+/* Center CV button */
+.cv-download {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
 
+/* News Section Styles */
 #news .col-custom {
     flex: 0 0 20%; /* Each column takes up 20% of the row */
     max-width: 20%;
@@ -77,7 +86,13 @@ img {
     border-radius: 5px;
 }
 
-/* Ensure responsiveness */
+/* Ensure consistent section width */
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Center sections */
+}
+
+/* Responsiveness */
 @media (max-width: 768px) {
     #news .col-custom {
         flex: 0 0 50%;
