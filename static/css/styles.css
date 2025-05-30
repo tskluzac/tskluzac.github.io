@@ -106,3 +106,21 @@ img {
         max-width: 100%;
     }
 }
+
+/* Image styles */
+img {
+    margin: 0 auto;
+    display: block;
+    /* force transparent PNGs to sit on white */
+    background-color: #fff;
+}
+
+/* News Section Styles */
+#news img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    /* reinforce white backing, and remove any browser outline */
+    background-color: #fff;
+    border: none;
+}
